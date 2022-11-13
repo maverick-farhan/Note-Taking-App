@@ -1,6 +1,6 @@
 # Note-Taking-App
 
-##Screenshot
+## Screenshot
 ![NoteDown](./note1.png)
 ![NoteDown](./note2.png)
 ![NoteDown](./note3.png)
