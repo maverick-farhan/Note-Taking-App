@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Philosopher', sans-serif;
+}
+
+html,body{
+width:100%;
+height:100%;
+overflow-x: hidden;
+background-color:#FBFACD;
+}
+div#main{
+width:100vw;
+padding:30px;
+display:flex;
+flex-wrap:wrap;
+}
+
+nav{
+position:relative;
+top:30px;
+margin:auto;
+width: 90%;
+height:10vh;
+border-radius:20px;
+background-color: #354259;
+}
+div.logo{
+width: 100%;
+height:10vh;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+
+h1{
+font-size:40px;
+color:#ddd;
+margin-right:20px;
+}
+img{
+width:40px;
+height:auto;
+}
+div.add-notes{
+display:flex;
+justify-content: flex-end;
+width:100%;
+height:5vh;
+align-items: center;
+}
+button#addbtn{
+all:unset;
+position:relative;
+margin-top:20px;
+margin-right:30px;
+padding:10px;
+font-weight: 900;
+border-radius:10px;
+color:#eee;
+cursor:pointer;
+overflow: hidden;
+transition: all .2s ease ;
+background-color:#EF9A53;
+font-size:18px;
+}
+
+button#addbtn::after{
+position:absolute;
+content:'\f055';
+transition: all .2s ease ;
+padding-top:10px;
+text-align:center;
+width:100%;
+height:100%;
+font-family: "Font Awesome 5 Free"; font-weight: 900;
+color:#eee;
+top:0;
+left:-130px;
+background-color:#354259;
+}
+button#addbtn:hover::after{
+transform:scale(1.02);
+left:0;
+font-size:20px;
+}
+
+/**********************************/
+div.note-wrapper{
+width:300px;
+height:300px;
+border-radius:10px;
+background-color: #3AB0FF;
+padding:10px;
+position: relative;
+margin-bottom:20px;
+margin-right:20px;
+}
+div.operation{
+display:flex;
+justify-content: flex-end;
+}
+button#edit,button#delete{
+all:unset;
+width:30px;
+cursor:pointer;
+margin:4px;
+height:30px;
+border-radius:50%;
+background:#ddd;
+text-align:center;
+}
+
+button#edit:hover{
+color:#ddd;
+background-color:#1C7947;
+}
+button#delete:hover{
+color:#ddd;
+background-color:#CF0A0A;
+}
+/*row="4" col="50"
+ * height:4em;
+ * width:50em;*/
+textarea{
+all:unset;
+padding:20px;
+white-space:wrap;
+position: absolute;
+overflow-wrap: break-word;
+}
+
+textarea::-webkit-scrollbar {
+width:3px;
+}
+textarea::-webkit-scrollbar-track {
+background-color:#eee;
+ }
+textarea::-webkit-scrollbar-thumb {
+background-color:orange;
+ }
+
+
+div.main-notes{
+width:17.5em;
+position: absolute;
+height:12em;
+}
+
+.hidden{
+display:none;
+}
